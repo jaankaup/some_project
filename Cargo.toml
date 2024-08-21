@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "parser",
+    "smoke",
+]
+
+[workspace.package]
+name = "some-project"
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+
+dioxus = "0.5.2"
+dioxus-desktop = "0.5.2"
+dioxus-html = "0.5.2"
+
+serde = "1"
+serde_json = "1"
+quick-xml = { version="0.36.1", features=["serialize"]}
+thiserror = "1.0.63"
